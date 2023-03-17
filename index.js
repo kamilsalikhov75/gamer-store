@@ -17,7 +17,7 @@ import {
 } from './controllers/product-controller.js';
 import { createOrder, getBuyerOrders } from './controllers/order-controller.js';
 const port = process.env.PORT || 3002;
-const dbUrl = process.env.DB_URI || 'mongodb://localhost:27017/game';
+const dbUrl = process.env.DB_URI;
 
 const storage = multer.diskStorage({
   destination: (_, __, cb) => {
